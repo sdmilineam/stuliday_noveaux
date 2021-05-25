@@ -1,0 +1,34 @@
+Symfony projet cour: utiliser tout sur timernal
+
+1- symfony new (name de projet) -full
+2- code . (to open visuelcode)
+3- cd blog (entre dans fiche)
+4- change nome de base de donné dans (.env fiche)
+(DATABASE_URL="mysql://root:@127.0.0.1:3307/(change name)?serverVersion=mariadb-10.4.13")
+4-symfony server:start
+5-symfony console d:b:c (creat databese)
+6-symfony console make:entity (name)
+	- add content
+	-ad string or text
+	- add creat_at
+	- add update_at
+	etc.....
+7-symfony console make:user
+	- enter all etape
+8-symfony console make:entity (name)
+	add - author
+	add - relation
+	add - many to one , one to many ,many to many, one to one.
+	- no
+	- yes
+	-enter
+	-yes
+9-symfony console doctrine:schema:update --force
+10-symfony console make:controller (name any think your went =>:blog)Controller
+	go to fiche controller , apres fiche blog controller change derection 
+		- @Route("/", name="app_(Name Your Fiche => : Blog)_index")
+		et suprimer ('controller_name' => '(Name)Controller')
+
+(pour lance le server)
+11- symfony server:list
+11-symfony serve -d
